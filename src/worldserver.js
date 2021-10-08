@@ -21,8 +21,8 @@ class WorldServer
     {
         if(client.worldserver != null)
             client.worldserver.removeClient(client);
-
-        client.worldserver = this;        
+            
+        client.worldserver = this;
         this.clients.set(client.socket, client);
     }
 
